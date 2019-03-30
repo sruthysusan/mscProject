@@ -1,18 +1,25 @@
 #include "mbed.h"
-#include "events/mbed_events.h"
+ 
 
 class uartModem {
   
 public: 
+  
 Serial *serialPort;  // keep as public for straight connection 
 typedef uint32_t BAUD;
 
-uartModem (BAUD baudRate);
+uartModem (BAUD baudRate,Serial* comPort);
 ~uartModem();
-void sendUart();
 
-void callback() ;
-Thread t(osPriorityNormal);
+void sendUart();
+void callbackM() ;
+
+void rxCallback() 
+{
+   
+   serialPort->putc(serialPort->getc());
+}
+
 
 private:
   

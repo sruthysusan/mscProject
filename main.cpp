@@ -1,24 +1,29 @@
 #include "UART.h"
 
 
+Serial *comPC;
+uartModem blueToothport(38400,comPC);
 
 int main() {
-uartModem blueToothport(38400);
+
   
-//blueToothport.serialPort->attach(&callback);  //attach the process as an interrupt
+//blueToothport.serialPort->attach(&rxCallback, Serial::RxIrq);  //attach the process as an interrupt
     
 while(1)
- {
-        
-        
-       
-wait(0.2);
-   
-    
-}
+ {      
+            
+   wait(0.2);
+     
+ }
 }
 
-void callback() 
+
+
+
+
+
+void rxCallback() 
 {
-  //  printf("%c\n", blueToothport.serialPort->getc());
+   
+    blueToothport.serialPort->putc(blueToothport.serialPort->getc());
 }

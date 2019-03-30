@@ -2,22 +2,17 @@
 
 
 
-uartModem::uartModem (BAUD baudRate)
-   {
- //   serialPort->attach(&callback);  //attach the process as an interrupt
-    t.start(callback(&eventQueue, &EventQueue::dispatch_forever));
+ uartModem ::uartModem (BAUD baudRate,Serial* comPort)
+ 
+   { 
     serialPort = new  Serial(USBTX, USBRX);    
     serialPort->baud(baudRate);
     serialPort->format(8,SerialBase::None,1);  
-    serialPort->attach(&callback);
+    memcpy(comPort,serialPort,sizeof(serialPort));
   }
 
-uartModem::~uartModem ()
+uartModem ::~uartModem ()
   {    
     delete serialPort;
   }
 
-void uartModem:: callback() 
-{
-    printf("%c\n", serialPort->getc());
-}
