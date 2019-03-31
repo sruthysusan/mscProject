@@ -1,5 +1,5 @@
 #include "UART.h"
-
+#include "btCommands.h"
 
 
  uartModem ::uartModem (BAUD baudRate) 
@@ -8,6 +8,7 @@
     serialPort->baud(baudRate);
     serialPort->format(8,SerialBase::None,1);  
     statusFLAG =0;
+    memset(myDetails,'\0',sizeof(*myDetails) * BT_REGISTER_SIZE); // clearing all the detsails 
   }
 
 uartModem ::~uartModem ()
@@ -60,3 +61,13 @@ void uartModem :: enableRxStatusFlag (bool enable)
   else 
   statusFLAG&= ~(RX_FLAG);
 }
+
+void uartModem :: stackBTregisterDetails ()
+{
+  btResponseOK();
+  
+  
+  
+}
+
+

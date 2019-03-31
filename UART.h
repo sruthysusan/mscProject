@@ -4,13 +4,13 @@
 
 class uartModem {
   
-public: 
-    
+public:   
 
-
- Serial *serialPort;  // keep as public for straight connection 
+Serial *serialPort;  // keep as public for straight connection 
 typedef uint32_t BAUD;
+uint8_t rx_MsgBuffer[RX_LEN];
 
+string myDetails[BT_REGISTER_SIZE];
 
 uartModem (BAUD baudRate);
 ~uartModem();
@@ -20,12 +20,19 @@ bool stackRxbuffer();
 
 bool isRxdataReady();
 void enableRxStatusFlag (bool enable);
+void stackBTregisterDetails ();
 
 
 
 private:
 
 uint8_t statusFLAG;
-uint8_t rx_MsgBuffer[RX_LEN];
+
+
+  /*  The Blue Tooth communication  functions */
+bool btResponseOK();
+bool btresponseVersion();
+bool btresponseWait();
 
 };
+
