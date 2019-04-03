@@ -17,9 +17,8 @@ int main() {
     blueToothport.stackBTregisterDetails ();
     while (1) {
     
-      char b[7];
-     strcpy(b,"Hai");
-     blueToothport.sendUartString("HAI");
+
+    
         wait(2);
         
         if( blueToothport.isRxdataReady())

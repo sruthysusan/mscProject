@@ -2,6 +2,8 @@
 #include <string> 
 #include "globalConstant.h"
 
+enum BTpos{NAME=0,ADDR,PSWD,VERSION,ENUM_END};
+
 class uartModem {
   
 public:   
@@ -10,7 +12,8 @@ Serial *serialPort;  // keep as public for straight connection
 typedef uint32_t BAUD;
 uint8_t rx_MsgBuffer[RX_LEN];
 
-string myDetails[BT_REGISTER_SIZE];
+string myBtDetails[BT_REGISTER_SIZE];
+string myBtQuerry[BT_REGISTER_SIZE];
 
 uartModem (BAUD baudRate);
 ~uartModem();
@@ -27,11 +30,16 @@ void stackBTregisterDetails ();
 private:
 
 uint8_t statusFLAG;
-
+void loadBtQuerry(string* BtQuerry);
 
   /*  The Blue Tooth communication  functions */
-bool btResponseOK();
-bool btresponseVersion();
+
+uint8_t btResponseOK();
+uint8_t btresponseVersion();
+uint8_t btresponsePassword();
+
+uint8_t  btTwoResponseFunc(char* commandPayload, BTpos position );
+
 bool btresponseWait();
 
 };

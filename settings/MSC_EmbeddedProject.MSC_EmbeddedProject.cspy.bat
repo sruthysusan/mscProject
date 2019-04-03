@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "C:\Users\Spincy`\Documents\MSC_EmbeddedProject_iar_kl25z\MSC_EmbeddedProject\settings\MSC_EmbeddedProject.MSC_EmbeddedProject.general.xcl" --backend -f "C:\Users\Spincy`\Documents\MSC_EmbeddedProject_iar_kl25z\MSC_EmbeddedProject\settings\MSC_EmbeddedProject.MSC_EmbeddedProject.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "C:\Users\Spincy`\MscPRoject\mscProject\settings\MSC_EmbeddedProject.MSC_EmbeddedProject.general.xcl" --backend -f "C:\Users\Spincy`\MscPRoject\mscProject\settings\MSC_EmbeddedProject.MSC_EmbeddedProject.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "C:\Users\Spincy`\Documents\MSC_EmbeddedProject_iar_kl25z\MSC_EmbeddedProject\settings\MSC_EmbeddedProject.MSC_EmbeddedProject.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\Spincy`\Documents\MSC_EmbeddedProject_iar_kl25z\MSC_EmbeddedProject\settings\MSC_EmbeddedProject.MSC_EmbeddedProject.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "C:\Users\Spincy`\MscPRoject\mscProject\settings\MSC_EmbeddedProject.MSC_EmbeddedProject.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\Spincy`\MscPRoject\mscProject\settings\MSC_EmbeddedProject.MSC_EmbeddedProject.driver.xcl" 
 
 @echo off 
 :end

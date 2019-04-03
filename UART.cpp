@@ -1,5 +1,5 @@
 #include "UART.h"
-#include "btCommands.h"
+//#include "btCommands.h"
 
 
  uartModem ::uartModem (BAUD baudRate) 
@@ -8,7 +8,8 @@
     serialPort->baud(baudRate);
     serialPort->format(8,SerialBase::None,1);  
     statusFLAG =0;
-    memset(myDetails,'\0',sizeof(*myDetails) * BT_REGISTER_SIZE); // clearing all the detsails 
+    memset(myBtDetails,'\0',sizeof(*myBtDetails) * BT_REGISTER_SIZE); // clearing all the detsails 
+    loadBtQuerry(myBtQuerry);
   }
 
 uartModem ::~uartModem ()
@@ -20,7 +21,7 @@ void uartModem :: sendUartString(char* strData)
  {
    unsigned i;  
    for( i=0; strData[i]!='\0'; i++ )     
-     serialPort->putc(strData[i]);   
+     this->serialPort->putc(strData[i]);   
  }
 
 bool uartModem :: stackRxbuffer()
@@ -62,12 +63,29 @@ void uartModem :: enableRxStatusFlag (bool enable)
   statusFLAG&= ~(RX_FLAG);
 }
 
+
+
 void uartModem :: stackBTregisterDetails ()
 {
-  btResponseOK();
-  
-  
-  
+  char p[25]={0};
+  if (btResponseOK())  // to see "AT" and "OK" command 
+  {
+   for(int i=0;i< ENUM_END;i++)
+   {     
+// https://stackoverflow.com/questions/2889421/how-to-copy-a-string-into-a-char-array-in-c-without-going-over-the-buffer/2889483
+     myBtQuerry[i].copy(p,myBtQuerry[i].length());
+     btTwoResponseFunc(p, BTpos (i) );
+   }
+  } 
 }
 
+
+
+void uartModem :: loadBtQuerry(string* BtQuerry)
+{
+  BtQuerry[NAME]    = "AT+NAME?\r\n";
+  BtQuerry[ADDR]    = "AT+ADDR?\r\n";
+  BtQuerry[PSWD]    = "AT+PSWD?\r\n";
+  BtQuerry[VERSION] = "AT+VERSION?\r\n";
+}
 

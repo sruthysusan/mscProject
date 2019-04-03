@@ -2,283 +2,300 @@
 
 <project>
   <fileVersion>2</fileVersion>
-  <fileChecksum>905574092</fileChecksum>
+  <fileChecksum>2053659906</fileChecksum>
   <configuration>
     <name>MSC_EmbeddedProject</name>
     <outputs>
-      <file>$PROJ_DIR$\mbed_config.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\PeripheralPins.h</file>
-      <file>$PROJ_DIR$\UART.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\PinNames.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\PeripheralNames.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\MKL25Z4.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\PortNames.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\RTE_Components.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\arm_math.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\clk_freqs.h</file>
-      <file>$PROJ_DIR$\main.cpp</file>
-      <file>$PROJ_DIR$\UART.cpp</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\mbed_fault_handler.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\mbed_rtx.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\mpu_armv7.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\objects.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\mbed_cmsis_conf.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\system_MKL25Z4.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\cmsis_armcc.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\cmsis_iccarm.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\gpio_object.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\tz_context.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\core_cm4.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\AnalogIn.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\cmsis_compiler.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\core_cm33.h</file>
       <file>$PROJ_DIR$\mbed\drivers\AnalogOut.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\mpu_armv8.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\cmsis_armclang.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\cmsis_version.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\core_cm23.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\core_armv8mbl.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\cmsis.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\core_cm0.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\core_cm0plus.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\core_cm1.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\core_armv8mml.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\core_cm7.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\device.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\cmsis_nvic.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\core_cm3.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\cmsis_gcc.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\core_sc300.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\core_sc000.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\SPI.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\Ethernet.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\LowPowerTicker.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\SerialWireOutput.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\DigitalIn.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\I2C.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\InterruptManager.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\DigitalOut.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\LowPowerTimeout.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\QSPI.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\SerialBase.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\BusOut.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\PortOut.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\SPISlave.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\DigitalInOut.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\LowPowerTimer.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\MbedCRC.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\CAN.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\Serial.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\InterruptIn.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\TableCRC.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\Ticker.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\Timeout.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\Timer.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\I2CSlave.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\FlashIAP.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\BusInOut.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\PortIn.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\PortInOut.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\BusIn.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\RawSerial.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\PwmOut.h</file>
-      <file>$PROJ_DIR$\mbed\hal\can_api.h</file>
-      <file>$PROJ_DIR$\mbed\hal\flash_api.h</file>
-      <file>$PROJ_DIR$\mbed\hal\mpu_api.h</file>
-      <file>$PROJ_DIR$\mbed\hal\pinmap.h</file>
-      <file>$PROJ_DIR$\mbed\hal\analogin_api.h</file>
-      <file>$PROJ_DIR$\mbed\hal\can_helper.h</file>
-      <file>$PROJ_DIR$\mbed\hal\critical_section_api.h</file>
-      <file>$PROJ_DIR$\mbed\hal\LowPowerTickerWrapper.h</file>
-      <file>$PROJ_DIR$\mbed\hal\flash_data.h</file>
-      <file>$PROJ_DIR$\mbed\hal\port_api.h</file>
-      <file>$PROJ_DIR$\mbed\hal\gpio_api.h</file>
-      <file>$PROJ_DIR$\mbed\hal\spi_api.h</file>
-      <file>$PROJ_DIR$\mbed\hal\pwmout_api.h</file>
-      <file>$PROJ_DIR$\mbed\hal\spm_api.h</file>
-      <file>$PROJ_DIR$\mbed\hal\qspi_api.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\UARTSerial.h</file>
-      <file>$PROJ_DIR$\mbed\drivers\TimerEvent.h</file>
-      <file>$PROJ_DIR$\mbed\hal\itm_api.h</file>
-      <file>$PROJ_DIR$\mbed\hal\lp_ticker_api.h</file>
-      <file>$PROJ_DIR$\mbed\hal\mbed_lp_ticker_wrapper.h</file>
       <file>$PROJ_DIR$\mbed\hal\analogout_api.h</file>
-      <file>$PROJ_DIR$\mbed\hal\rtc_api.h</file>
-      <file>$PROJ_DIR$\mbed\hal\serial_api.h</file>
-      <file>$PROJ_DIR$\mbed\hal\gpio_irq_api.h</file>
-      <file>$PROJ_DIR$\mbed\hal\Driver_Common.h</file>
-      <file>$PROJ_DIR$\mbed\hal\i2c_api.h</file>
-      <file>$PROJ_DIR$\mbed\hal\sleep_api.h</file>
-      <file>$PROJ_DIR$\mbed\hal\buffer.h</file>
-      <file>$PROJ_DIR$\mbed\hal\Driver_Storage.h</file>
-      <file>$PROJ_DIR$\mbed\hal\crc_api.h</file>
-      <file>$PROJ_DIR$\mbed\hal\dma_api.h</file>
-      <file>$PROJ_DIR$\mbed\hal\ethernet_api.h</file>
-      <file>$PROJ_DIR$\mbed\platform\CriticalSectionLock.h</file>
-      <file>$PROJ_DIR$\mbed\platform\FilePath.h</file>
-      <file>$PROJ_DIR$\mbed\platform\FileSystemHandle.h</file>
-      <file>$PROJ_DIR$\mbed\platform\DeepSleepLock.h</file>
-      <file>$PROJ_DIR$\mbed\hal\us_ticker_api.h</file>
-      <file>$PROJ_DIR$\mbed\mbed.h</file>
-      <file>$PROJ_DIR$\mbed\platform\LocalFileSystem.h</file>
-      <file>$PROJ_DIR$\mbed\platform\NonCopyable.h</file>
-      <file>$PROJ_DIR$\mbed\platform\PlatformMutex.h</file>
-      <file>$PROJ_DIR$\mbed\platform\FileLike.h</file>
-      <file>$PROJ_DIR$\mbed\platform\DirHandle.h</file>
-      <file>$PROJ_DIR$\mbed\platform\CThunk.h</file>
-      <file>$PROJ_DIR$\mbed\platform\FunctionPointer.h</file>
-      <file>$PROJ_DIR$\mbed\platform\ScopedLock.h</file>
-      <file>$PROJ_DIR$\mbed\platform\SharedPtr.h</file>
-      <file>$PROJ_DIR$\mbed\hal\trng_api.h</file>
-      <file>$PROJ_DIR$\mbed\platform\ScopedRamExecutionLock.h</file>
-      <file>$PROJ_DIR$\mbed\platform\FileBase.h</file>
-      <file>$PROJ_DIR$\mbed\platform\SingletonPtr.h</file>
-      <file>$PROJ_DIR$\mbed\platform\Span.h</file>
-      <file>$PROJ_DIR$\mbed\platform\Stream.h</file>
-      <file>$PROJ_DIR$\mbed\platform\Callback.h</file>
-      <file>$PROJ_DIR$\mbed\platform\Transaction.h</file>
-      <file>$PROJ_DIR$\mbed\platform\CThunkBase.h</file>
-      <file>$PROJ_DIR$\mbed\platform\CallChain.h</file>
-      <file>$PROJ_DIR$\mbed\hal\ticker_api.h</file>
-      <file>$PROJ_DIR$\mbed\platform\FileSystemLike.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\analogin_api.o</file>
+      <file>$PROJ_DIR$\mbed\hal\analogin_api.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\AnalogIn.h</file>
+      <file>$TOOLKIT_DIR$\inc\cpp\xmemory</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+      <file>$TOOLKIT_DIR$\inc\cpp\stdexcept</file>
+      <file>$TOOLKIT_DIR$\lib\dl6M_tlf.a</file>
+      <file>$PROJ_DIR$\BUILD\Obj\main.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\inc\cpp\exception</file>
+      <file>$TOOLKIT_DIR$\inc\c\cstddef</file>
+      <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\xmtx.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\cstdlib</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\cpp\ios</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale_lconv.h</file>
+      <file>$PROJ_DIR$\BUILD\Obj\main.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
+      <file>$TOOLKIT_DIR$\inc\cpp\utility</file>
+      <file>$PROJ_DIR$\btCommands.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlpp6M_tl_fc.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\time.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\BUILD\Obj\btCommands.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\cctype</file>
+      <file>$TOOLKIT_DIR$\inc\cpp\streambuf</file>
+      <file>$TOOLKIT_DIR$\inc\cpp\iosfwd</file>
+      <file>$TOOLKIT_DIR$\inc\cpp\xiosbase</file>
+      <file>$TOOLKIT_DIR$\inc\cpp\xlocale</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\BUILD\Obj\btCommands.pbi</file>
+      <file>$PROJ_DIR$\BUILD\Exe\name.out</file>
+      <file>$PROJ_DIR$\BUILD\Obj\UART.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\wchar.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\climits</file>
+      <file>$TOOLKIT_DIR$\inc\cpp\xutility</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$PROJ_DIR$\BUILD\Exe\MSC_EmbeddedProject.srec</file>
+      <file>$TOOLKIT_DIR$\inc\c\locale.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtls.h</file>
+      <file>$PROJ_DIR$\BUILD\Obj\UART.__cstat.et</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\MKL25Z4.icf</file>
+      <file>$TOOLKIT_DIR$\inc\cpp\xstddef</file>
+      <file>$TOOLKIT_DIR$\inc\c\errno.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\cpp\new</file>
+      <file>$TOOLKIT_DIR$\inc\c\cstdio</file>
+      <file>$PROJ_DIR$\mbed\drivers\CAN.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\BusOut.h</file>
       <file>$PROJ_DIR$\mbed\platform\ATCmdParser.h</file>
-      <file>$PROJ_DIR$\mbed\platform\ScopedRomWriteLock.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\analogout_api.o</file>
+      <file>$PROJ_DIR$\mbed\drivers\BusIn.h</file>
+      <file>$PROJ_DIR$\mbed\platform\Callback.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\cmain.o</file>
+      <file>$PROJ_DIR$\mbed\hal\buffer.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\BusInOut.h</file>
       <file>$PROJ_DIR$\mbed\platform\CircularBuffer.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\cmsis_version.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\core_cm0plus.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\cmsis_nvic.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\cmsis_iccarm.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\cmsis.h</file>
+      <file>$PROJ_DIR$\mbed\hal\crc_api.h</file>
+      <file>$PROJ_DIR$\mbed\platform\CriticalSectionLock.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\cmsis_compiler.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\gpio_irq_api.o</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\gpio_object.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\MbedCRC.h</file>
+      <file>$PROJ_DIR$\mbed\hal\gpio_api.h</file>
+      <file>$PROJ_DIR$\mbed\platform\FileLike.h</file>
+      <file>$PROJ_DIR$\mbed\hal\gpio_irq_api.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\FlashIAP.h</file>
+      <file>$PROJ_DIR$\mbed\platform\FileBase.h</file>
+      <file>$PROJ_DIR$\mbed\platform\FunctionPointer.h</file>
+      <file>$PROJ_DIR$\mbed\platform\FileSystemHandle.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\gpio_api.o</file>
+      <file>$PROJ_DIR$\mbed\platform\DeepSleepLock.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\DigitalIn.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\Ethernet.h</file>
       <file>$PROJ_DIR$\mbed\platform\FileHandle.h</file>
-      <file>$PROJ_DIR$\mbed\platform\critical.h</file>
-      <file>$PROJ_DIR$\mbed\platform\mbed_preprocessor.h</file>
-      <file>$PROJ_DIR$\mbed\platform\mbed_crash_data_offsets.h</file>
-      <file>$PROJ_DIR$\mbed\platform\mbed_error.h</file>
-      <file>$PROJ_DIR$\mbed\platform\mbed_version.h</file>
-      <file>$PROJ_DIR$\mbed\platform\platform.h</file>
-      <file>$PROJ_DIR$\mbed\platform\mbed_assert.h</file>
-      <file>$PROJ_DIR$\mbed\platform\mbed_mktime.h</file>
-      <file>$PROJ_DIR$\mbed\platform\mbed_rtc_time.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\DigitalInOut.h</file>
+      <file>$PROJ_DIR$\mbed\platform\DirHandle.h</file>
+      <file>$PROJ_DIR$\mbed\hal\dma_api.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\except.o</file>
+      <file>$PROJ_DIR$\mbed\drivers\DigitalOut.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\device.h</file>
       <file>$PROJ_DIR$\mbed\platform\mbed_debug.h</file>
-      <file>$PROJ_DIR$\mbed\platform\rtc_time.h</file>
-      <file>$PROJ_DIR$\mbed\platform\mbed_interface.h</file>
-      <file>$PROJ_DIR$\mbed\platform\mbed_semihost_api.h</file>
-      <file>$PROJ_DIR$\mbed\platform\sleep.h</file>
-      <file>$PROJ_DIR$\mbed\platform\toolchain.h</file>
-      <file>$PROJ_DIR$\mbed\platform\wait_api.h</file>
-      <file>$PROJ_DIR$\mbed\platform\semihost_api.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\LowPowerTicker.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\LowPowerTimer.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\mbed_board.o</file>
+      <file>$PROJ_DIR$\mbed\hal\i2c_api.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\I2C.h</file>
+      <file>$PROJ_DIR$\mbed\platform\LocalFileSystem.h</file>
+      <file>$PROJ_DIR$\mbed\mbed.h</file>
+      <file>$PROJ_DIR$\mbed\platform\mbed_assert.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\i2c_api.o</file>
+      <file>$PROJ_DIR$\mbed\hal\lp_ticker_api.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\I2CSlave.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\InterruptIn.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\mbed.a</file>
+      <file>$PROJ_DIR$\mbed\drivers\LowPowerTimeout.h</file>
       <file>$PROJ_DIR$\mbed\platform\mbed_application.h</file>
       <file>$PROJ_DIR$\mbed\platform\mbed_critical.h</file>
-      <file>$PROJ_DIR$\mbed\platform\mbed_error_hist.h</file>
-      <file>$PROJ_DIR$\mbed\platform\mbed_mem_trace.h</file>
+      <file>$PROJ_DIR$\mbed\platform\mbed_error.h</file>
       <file>$PROJ_DIR$\mbed\platform\mbed_retarget.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\PeripheralPins.o</file>
-      <file>$PROJ_DIR$\mbed\platform\mbed_mpu_mgmt.h</file>
-      <file>$PROJ_DIR$\mbed\platform\mbed_poll.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\analogin_api.o</file>
-      <file>$PROJ_DIR$\mbed\platform\mbed_sleep.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\analogout_api.o</file>
-      <file>$PROJ_DIR$\mbed\platform\mbed_toolchain.h</file>
-      <file>$PROJ_DIR$\mbed\platform\mbed_wait_api.h</file>
-      <file>$PROJ_DIR$\mbed\platform\mbed_stats.h</file>
-      <file>$PROJ_DIR$\mbed\platform\mbed_power_mgmt.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\cmain.o</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\startup_MKL25Z4.o</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\us_ticker.o</file>
-      <file>$TOOLKIT_DIR$\inc\cpp\xstddef</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\pinmap.o</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\except.o</file>
-      <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
       <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\mbed_fault_handler.o</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\mbed_tz_context.o</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\mbed_board.o</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\gpio_irq_api.o</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\mbed_retarget.o</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\mbed_overrides.o</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\port_api.o</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\i2c_api.o</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\pwmout_api.o</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\serial_api.o</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\sleep.o</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\gpio_api.o</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\spi_api.o</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\system_MKL25Z4.o</file>
+      <file>$PROJ_DIR$\mbed\platform\mbed_poll.h</file>
+      <file>$PROJ_DIR$\mbed\platform\mbed_toolchain.h</file>
+      <file>$PROJ_DIR$\mbed\platform\mbed_interface.h</file>
+      <file>$PROJ_DIR$\mbed\platform\mbed_rtc_time.h</file>
       <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\mbed_sdk_boot.o</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\mbed.a</file>
-      <file>$TOOLKIT_DIR$\inc\c\cstdlib</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\time.h</file>
-      <file>$TOOLKIT_DIR$\lib\dl6M_tlf.a</file>
-      <file>$TOOLKIT_DIR$\inc\c\cstddef</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\mbed\platform\mbed_stats.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\mbed_tz_context.o</file>
+      <file>$PROJ_DIR$\mbed\platform\mbed_version.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\mbed_overrides.o</file>
+      <file>$PROJ_DIR$\mbed\platform\mbed_power_mgmt.h</file>
+      <file>$PROJ_DIR$\mbed\platform\mbed_wait_api.h</file>
+      <file>$PROJ_DIR$\mbed\platform\ScopedRomWriteLock.h</file>
+      <file>$PROJ_DIR$\mbed\platform\mbed_preprocessor.h</file>
+      <file>$PROJ_DIR$\mbed\platform\mbed_mpu_mgmt.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\mbed_retarget.o</file>
+      <file>$PROJ_DIR$\mbed\drivers\RawSerial.h</file>
+      <file>$PROJ_DIR$\mbed\platform\ScopedLock.h</file>
       <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\rtc_api.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\errno.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
-      <file>$PROJ_DIR$\BUILD\Obj\main.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\cstdarg</file>
-      <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
-      <file>$PROJ_DIR$\BUILD\Obj\UART.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-      <file>$PROJ_DIR$\BUILD\Exe\name.out</file>
-      <file>$PROJ_DIR$\BUILD\Obj\main.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-      <file>$PROJ_DIR$\BUILD\Exe\MSC_EmbeddedProject.srec</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-      <file>$TOOLKIT_DIR$\inc\cpp\exception</file>
-      <file>$TOOLKIT_DIR$\inc\c\cstdio</file>
-      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-      <file>$PROJ_DIR$\BUILD\Obj\main.__cstat.et</file>
-      <file>$TOOLKIT_DIR$\inc\cpp\new</file>
-      <file>$TOOLKIT_DIR$\inc\c\cstring</file>
-      <file>$TOOLKIT_DIR$\lib\dlpp6M_tl_fc.a</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
-      <file>$PROJ_DIR$\BUILD\Obj\UART.__cstat.et</file>
-      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
-      <file>$PROJ_DIR$\BUILD\Obj\UART.o</file>
+      <file>$PROJ_DIR$\mbed\hal\pwmout_api.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\PortInOut.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\PortIn.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\PwmOut.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\pwmout_api.o</file>
+      <file>$PROJ_DIR$\mbed\platform\ScopedRamExecutionLock.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\QSPI.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\PortOut.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\objects.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\PeripheralNames.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\pinmap.o</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\MKL25Z4.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\PinNames.h</file>
+      <file>$PROJ_DIR$\mbed\platform\PlatformMutex.h</file>
+      <file>$PROJ_DIR$\mbed\hal\port_api.h</file>
+      <file>$PROJ_DIR$\mbed\platform\platform.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\port_api.o</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\PeripheralPins.o</file>
+      <file>$PROJ_DIR$\mbed\platform\NonCopyable.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\PortNames.h</file>
+      <file>$PROJ_DIR$\mbed\hal\mpu_api.h</file>
+      <file>$PROJ_DIR$\mbed\hal\spi_api.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\startup_MKL25Z4.o</file>
+      <file>$PROJ_DIR$\mbed\hal\sleep_api.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\SPI.h</file>
+      <file>$PROJ_DIR$\mbed\platform\SingletonPtr.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\spi_api.o</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\serial_api.o</file>
+      <file>$PROJ_DIR$\mbed\drivers\Serial.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\SPISlave.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\SerialBase.h</file>
+      <file>$PROJ_DIR$\mbed\hal\serial_api.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\sleep.o</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\system_MKL25Z4.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\system_MKL25Z4.o</file>
+      <file>$PROJ_DIR$\mbed\platform\Stream.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\Ticker.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\Timeout.h</file>
+      <file>$PROJ_DIR$\mbed\hal\ticker_api.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\TableCRC.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\TimerEvent.h</file>
+      <file>$PROJ_DIR$\mbed\drivers\Timer.h</file>
+      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\us_ticker.o</file>
+      <file>$PROJ_DIR$\main.cpp</file>
       <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
+      <file>$TOOLKIT_DIR$\inc\cpp\xdebug</file>
+      <file>$PROJ_DIR$\BUILD\Obj\UART.pbi</file>
+      <file>$PROJ_DIR$\btCommands.cpp</file>
+      <file>$PROJ_DIR$\mbed\drivers\UARTSerial.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
       <file>$PROJ_DIR$\BUILD\Obj\MSC_EmbeddedProject.pbd</file>
-      <file>$TOOLKIT_DIR$\inc\c\limits.h</file>
+      <file>$PROJ_DIR$\UART.cpp</file>
+      <file>$PROJ_DIR$\globalConstant.h</file>
+      <file>$PROJ_DIR$\mbed_config.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$PROJ_DIR$\mbed\hal\us_ticker_api.h</file>
+      <file>$PROJ_DIR$\UART.h</file>
+      <file>$TOOLKIT_DIR$\inc\cpp\xstring</file>
+      <file>$TOOLKIT_DIR$\inc\cpp\typeinfo</file>
+      <file>$TOOLKIT_DIR$\inc\cpp\ostream</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\clocale</file>
+      <file>$TOOLKIT_DIR$\inc\cpp\string</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\cstdarg</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$TOOLKIT_DIR$\inc\cpp\xlocnum</file>
+      <file>$TOOLKIT_DIR$\inc\c\cmath</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocalelist.h</file>
       <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
-      <file>$PROJ_DIR$\mbed\TARGET_KL25Z\TOOLCHAIN_IAR\MKL25Z4.icf</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\cwchar</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\cpp\istream</file>
+      <file>$TOOLKIT_DIR$\inc\c\ctime</file>
+      <file>$TOOLKIT_DIR$\inc\cpp\xlocinfo</file>
+      <file>$TOOLKIT_DIR$\inc\c\limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$PROJ_DIR$\BUILD\Obj\main.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\cstring</file>
+      <file>$PROJ_DIR$\BUILD\Obj\btCommands.o</file>
     </outputs>
     <file>
       <name>[ROOT_NODE]</name>
       <outputs>
         <tool>
           <name>ILINK</name>
-          <file> 215</file>
+          <file> 35</file>
         </tool>
       </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\BUILD\Exe\name.out</name>
+      <outputs>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 41</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 45 2 55 213 58 88 80 70 100 19 104 94 110 119 125 115 117 146 139 145 133 128 156 161 155 151 163 36 171 202 23 13 9</file>
+        </tool>
+      </inputs>
     </file>
     <file>
       <name>$PROJ_DIR$\main.cpp</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 204</file>
+          <file> 211</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 216</file>
+          <file> 19</file>
         </tool>
         <tool>
           <name>__cstat</name>
-          <file> 224</file>
+          <file> 10</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 217 223 163 61 222 58 170 232 3 203 157 144 106 115 213 26 66 111 140 199 220 205 85 88 116 133 143 145 71 57 60 114 110 129 38 209 202 5 128 167 98 214 142 48 55 56 62 68 91 67 46 168 118 124 121 198 160 4 212 211 195 207 6 17 24 19 236 237 174 126 103 138 65 196 125 113 156 150 148 51 73 70 72 23 75 44 49 45 74 69 53 52 59 63 102 147 135 108 136 169 120 194 226 201 219 15 32 20 39 34 29 208 230 86 80 221 96 228 206 87 54 105 92 234 2 225 117 101 137 99 64 94 112 162 78</file>
+          <file> 212 116 153 16 123 112 111 86 210 124 207 113 93 25 142 129 57 159 103 147 169 194 60 76 54 51 40 141 90 73 144 164 107 120 84 209 203 14 185 106 89 4 83 165 152 68 49 47 140 3 99 46 167 154 150 59 67 175 149 17 15 8 5 98 24 91 56 130 132 96 126 135 105 114 122 78 174 193 6 148 162 69 65 196 109 7 143 11 12 1 197 87 160 77 182 192 200 31 38 177 28 42 18 195 118 27 108 82 85 53 131 136 0 157 158 102 52 180 72 170 166 92 97 121 79 81 134 127 138 205 173 33 187 198 137 66 71 64 63 62 48 20 50 74 95 61 75 168 101 188 206 199 29 32 191 208 39 21 30 190 201 189 204 37 176 181 43</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 0 2 113 143 167 140 144 198 217 220 199 232 212 201 219 207 223 194 209 222 237 211 226 214 195 160 205 202 196 38 15 32 5 34 29 24 19 208 17 39 6 4 3 20 145 156 213 203 230 142 150 148 48 86 157 228 51 58 73 116 115 55 70 71 85 72 56 23 80 126 225 221 174 26 96 75 88 170 102 133 62 128 117 125 138 129 163 54 98 103 106 44 87 57 49 101 68 45 61 74 91 63 99 137 69 60 64 105 53 67 65 92 112 94 66 52 46 59 114 168 147 135 110 118 108 111 234 136 162 78 124 169 120 121</file>
+          <file> 186 189 98 118 112 123 144 12 210 16 205 173 33 174 193 175 40 15 187 51 6 49 212 182 198 109 25 47 24 90 137 66 140 63 62 69 65 48 162 64 148 138 141 71 99 106 27 20 196 108 113 91 82 73 107 203 89 85 56 142 147 53 60 131 143 130 136 4 3 154 50 11 46 0 1 132 129 120 152 167 157 164 74 77 84 57 111 159 160 59 87 153 150 158 96 95 102 83 52 126 180 103 75 61 76 72 168 67 135 170 165 169 188 101 166 105 92 93 97 121 114 54 79 86 68 81 209 122 124 149 134 116 78 127 195 206 192 17 199 38 200 29 31 32 8 190 5 39 21 30 204 37 191 177 208 28 176 181 43 14 42 18 201 194 207 185</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\btCommands.cpp</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 34</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 213</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 26</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 16 195 148 147 56 112 144 90 142 114 126 210 38 24 132 105 122 15 193 6 162 69 7 175 82 85 57 159 107 167 84 192 200 91 130 96 135 103 78 174 65 196 89 50 160 150 73 61 168 203 25 209 31 177 181 37 106 113 60 4 153 83 76 165 93 152 54 68 116 212 141 40 49 51 47 140 123 143 154 187 74 77 182 59 87 95 75 99 120 101 188 170 197 206 17 8 194 11 22 98 185 118 27 108 53 131 136 0 157 158 102 52 180 72 166 92 97 121 111 79 86 81 134 127 12 109 138 205 173 33 198 137 66 71 64 63 62 48 20 3 46 1 129 164 67 169 124 149 199 29 32 191 208 5 204 176 43 42 189 190 39 21 30 28 207 201 14 18</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 186 189 98 118 112 123 144 12 210 16 205 173 33 174 193 175 40 15 187 51 6 49 212 182 198 109 25 47 24 90 137 66 140 63 62 69 65 48 162 64 148 138 141 71 99 106 27 20 196 108 113 91 82 73 107 203 89 85 56 142 147 53 60 131 143 130 136 4 3 154 50 11 46 0 1 132 129 120 152 167 157 164 74 77 84 57 111 159 160 59 87 153 150 158 96 95 102 83 52 126 180 103 75 61 76 72 168 67 135 170 165 169 188 101 166 105 92 93 97 121 114 54 79 86 68 81 209 122 124 149 134 116 78 127 195 206 192 17 199 38 200 29 31 32 8 190 5 39 21 30 204 37 191 177 208 28 176 181 43 14 42 18 201 194 207 185 22</file>
         </tool>
       </inputs>
     </file>
@@ -287,40 +304,25 @@
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 210</file>
+          <file> 178</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 231</file>
+          <file> 36</file>
         </tool>
         <tool>
           <name>__cstat</name>
-          <file> 229</file>
+          <file> 44</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 217 223 163 61 222 58 170 232 3 203 157 144 106 115 213 26 66 111 140 199 220 205 85 88 116 133 143 145 71 57 60 114 110 129 38 209 202 5 128 167 98 214 142 48 55 56 62 68 91 67 46 168 118 124 121 198 160 4 212 211 195 207 6 17 24 19 236 237 174 126 103 138 65 196 125 113 156 150 148 51 73 70 72 23 75 44 49 45 74 69 53 52 59 63 102 147 135 108 136 169 120 194 226 201 219 15 32 20 39 34 29 208 230 86 80 221 96 228 206 87 54 105 92 234 2 225 117 101 137 99 64 94 112 162 78</file>
+          <file> 154 16 142 25 3 68 90 4 46 147 112 167 210 207 106 165 47 140 73 99 67 144 149 8 185 89 83 152 141 40 49 150 59 175 120 17 15 14 113 60 153 76 93 54 116 212 51 123 129 164 111 57 159 103 107 169 84 86 209 203 124 194 98 24 91 56 130 132 96 126 135 105 114 122 78 174 193 6 148 162 69 65 196 109 7 143 11 12 1 197 87 160 77 182 192 200 31 38 177 28 42 18 195 118 27 108 82 85 53 131 136 0 157 158 102 52 180 72 170 166 92 97 121 79 81 134 127 138 205 173 33 187 198 137 66 71 64 63 62 48 20 50 74 95 61 75 168 101 188 206 199 29 32 191 208 190 39 21 30 201 189 5 204 37 176 181 43</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 0 2 113 143 167 140 144 198 217 220 199 232 212 201 219 207 223 194 209 222 237 211 226 214 195 160 205 202 196 38 15 32 5 34 29 24 19 208 17 39 6 4 3 20 145 156 213 203 230 142 150 148 48 86 157 228 51 58 73 116 115 55 70 71 85 72 56 23 80 126 225 221 174 26 96 75 88 170 102 133 62 128 117 125 138 129 163 54 98 103 106 44 87 57 49 101 68 45 61 74 91 63 99 137 69 60 64 105 53 67 65 92 112 94 66 52 46 59 114 168 147 135 110 118 108 111 234 136 162 78 124 169 120 121</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\BUILD\Exe\name.out</name>
-      <outputs>
-        <tool>
-          <name>OBJCOPY</name>
-          <file> 218</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ILINK</name>
-          <file> 238 164 166 171 176 189 181 185 216 193 180 178 183 182 192 179 161 175 184 186 200 187 188 190 172 191 231 173 235 227 177 197</file>
+          <file> 186 189 98 118 112 123 144 12 210 16 205 173 33 174 193 175 40 15 187 51 6 49 212 182 198 109 25 47 24 90 137 66 140 63 62 69 65 48 162 64 148 138 141 71 99 106 27 20 196 108 113 91 82 73 107 203 89 85 56 142 147 53 60 131 143 130 136 4 3 154 50 11 46 0 1 132 129 120 152 167 157 164 74 77 84 57 111 159 160 59 87 153 150 158 96 95 102 83 52 126 180 103 75 61 76 72 168 67 135 170 165 169 188 101 166 105 92 93 97 121 114 54 79 86 68 81 209 122 124 149 134 116 78 127 195 206 192 17 199 38 200 29 31 32 8 190 5 39 21 30 204 37 191 177 208 28 176 181 43 14 42 18 201 194 207 185</file>
         </tool>
       </inputs>
     </file>

@@ -22,7 +22,7 @@ PrevWtdReset=System
 [ArmDriver]
 EnableCache=1
 [DebugChecksum]
-Checksum=-1542756979
+Checksum=971580541
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -35,8 +35,8 @@ MixedMode=1
 [SWOManager]
 SamplingDivider=8192
 OverrideClock=0
-CpuClock=90774400
-SwoClock=334483680
+CpuClock=0
+SwoClock=0
 DataLogMode=0
 ItmPortsEnabled=63
 ItmTermIOPorts=1
@@ -44,6 +44,8 @@ ItmLogPorts=0
 ItmLogFile=$PROJ_DIR$\ITM.log
 PowerForcePC=1
 PowerConnectPC=1
+[watch_formats]
+Fmt0={W}1:timerFlag	3	0
 [Trace1]
 Enabled=0
 ShowSource=1
@@ -70,6 +72,13 @@ EventEXC=0
 EventFOLD=0
 EventLSU=0
 EventSLEEP=0
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Bp0=_ 0 "EMUL_DATA" "statusFLAG" 0 0 0 0 4294967295
+Bp1=_ 0 "TDL_EMUL_TRACE_START" "strcpy" 0 0 0 0 4294967295
+Bp2=_ 1 "EMUL_CODE" "{$PROJ_DIR$\UART.cpp}.37.5" 0 0 1 "" 0 "" 0
+Count=3
 [DriverProfiling]
 Enabled=0
 Mode=2
@@ -87,10 +96,6 @@ Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
-[Disassemble mode]
-mode=0
-[Breakpoints2]
-Count=0
 [Aliases]
 Count=0
 SuppressDialog=0
