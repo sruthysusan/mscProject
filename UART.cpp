@@ -70,7 +70,7 @@ void uartModem :: stackBTregisterDetails ()
   char p[25]={0};
   if (btResponseOK())  // to see "AT" and "OK" command 
   {
-   for(int i=0;i< ENUM_END;i++)
+   for(int i=0;i< (int)ENUM_END;i++)
    {     
 // https://stackoverflow.com/questions/2889421/how-to-copy-a-string-into-a-char-array-in-c-without-going-over-the-buffer/2889483
      myBtQuerry[i].copy(p,myBtQuerry[i].length());
