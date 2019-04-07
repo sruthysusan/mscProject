@@ -1,5 +1,4 @@
-#include "mbed.h"
-#include <string> 
+ 
 #include "globalConstant.h"
 
 enum BTpos{NAME=0,ADDR,PSWD,VERSION,ENUM_END};
@@ -7,9 +6,11 @@ enum BTpos{NAME=0,ADDR,PSWD,VERSION,ENUM_END};
 class uartModem {
   
 public:   
-
-Serial *serialPort;  // keep as public for straight connection 
+  
 typedef uint32_t BAUD;
+  
+Serial *serialPort;  // keep as public for straight connection 
+
 uint8_t rx_MsgBuffer[RX_LEN];
 
 string myBtDetails[BT_REGISTER_SIZE];

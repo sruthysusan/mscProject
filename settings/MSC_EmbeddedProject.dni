@@ -22,7 +22,7 @@ PrevWtdReset=System
 [ArmDriver]
 EnableCache=1
 [DebugChecksum]
-Checksum=971580541
+Checksum=-1364287860
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -77,7 +77,7 @@ mode=0
 [Breakpoints2]
 Bp0=_ 0 "EMUL_DATA" "statusFLAG" 0 0 0 0 4294967295
 Bp1=_ 0 "TDL_EMUL_TRACE_START" "strcpy" 0 0 0 0 4294967295
-Bp2=_ 1 "EMUL_CODE" "{$PROJ_DIR$\UART.cpp}.37.5" 0 0 1 "" 0 "" 0
+Bp2=_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.cpp}.29.11" 0 0 1 "" 0 "" 0
 Count=3
 [DriverProfiling]
 Enabled=0

@@ -1749,6 +1749,18 @@
       <name>$PROJ_DIR$\UART.h</name>
     </file>
   </group>
+  <file>
+    <name>$PROJ_DIR$\motorSpeed.cpp</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\motorSpeed.h</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\RangeUltrasonic.cpp</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\RangeUltrasonic.h</name>
+  </file>
 </project>
 
 
