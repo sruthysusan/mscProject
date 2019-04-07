@@ -24,10 +24,10 @@ int main() {
     
         wait(2);
         
-        for(uint8_t i=0;i<100;i = i+3)
+        for(uint8_t i=25;i<110;i = i+10)
         {
           MotorParams.engineDrivingParams (i , 1);
-       //   wait(0.3);
+          wait(10);
         }
         wait(2);
       for(uint8_t i=0;i<100;i = i+2)

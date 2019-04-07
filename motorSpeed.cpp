@@ -2,7 +2,7 @@
 
 motorSetting :: motorSetting(SPEEDGEAR startSpeed):A1Apin(PTC1),A1Bpin(PTC2),B1Apin(PTB3),B1Bpin(PTB2)
 {
-  A1Apin.period(0.01);
+  A1Apin.period(0.01);  // 10 msec pulse
   A1Bpin.period(0.01);
   B1Apin.period(0.01);
   B1Bpin.period(0.01);
@@ -16,16 +16,18 @@ motorSetting :: motorSetting(SPEEDGEAR startSpeed):A1Apin(PTC1),A1Bpin(PTC2),B1A
 
 void motorSetting :: engineDrivingParams (uint16_t gear, bool forwardMotion)
 {
+  //https://os.mbed.com/handbook/PwmOut
 // float currentGear;// = (float(gear))/100;
  currentGear = gear;
  currentGear /=100;
   if(forwardMotion)
   {
+    
     //    set the motor direction on (gpio)
    // A1Apin = currentGear;
    // A1Bpin = 0;
-    B1Apin = currentGear;
-    B1Bpin = 0;
+    B1Apin.write (currentGear);
+    B1Bpin.write (0);
   }
   
   else
