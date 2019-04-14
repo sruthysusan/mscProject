@@ -1,4 +1,6 @@
-*.o,
- BUILD/Obj/*.o
+/*.o
+//BUILD/Obj/*.o
+//BUILD/Obj/*.O
+//BUILD/Obj
 
 
