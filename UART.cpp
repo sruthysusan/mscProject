@@ -38,7 +38,6 @@ bool uartModem :: stackRxbuffer()
     enableRxStatusFlag(true);
     return true;
   }
-  //(statusFLAG&= ~(RX_FLAG));
   count++;
   if(count > RX_LEN)  count=0;  // reset count to normal
   return false;

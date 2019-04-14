@@ -13,3 +13,19 @@
 
 #define ERROR 9595
 #define SUCCESS 7575
+#define OUT_OF_RANGE 165
+#define RECORDS   7
+#define previous(n) (RECORDS+n)
+
+
+
+
+
+/*
+engineDrivingParams (70 , 1);   //speed and direction ctrl
+ rangerObjt(10);                // ranging time assign
+ 
+ uint16_t ==> unsigned int 16 bit
+ uint8_t ==>  unsigned char 8 bit
+   
+*/
