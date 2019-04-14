@@ -1,6 +1,6 @@
 #include "UART.h"
 #include "motorSpeed.h"
-
+#include "RangeUltrasonic.h"
  
 uartModem blueToothport(38400);
 
@@ -10,7 +10,7 @@ void rxCallback()
    blueToothport.stackRxbuffer(); 
 } 
 
- 
+  uint16_t dist;
 int main() {    
 
     
@@ -18,25 +18,19 @@ int main() {
     wait(WARMUP_TIME);  // warm up time
     blueToothport.stackBTregisterDetails ();
     motorSetting MotorParams(NEUTRAL);
+    Rangingclass rangerObjt(20);
+    bool Dir;
+ //   MotorParams.engineDrivingParams (70 , 1);
+   
     while (1) {
     
-
     
+      dist = rangerObjt.rangeObstacle();
+      
         wait(2);
-        
-        for(uint8_t i=25;i<110;i = i+10)
-        {
-          MotorParams.engineDrivingParams (i , 1);
-          wait(10);
-        }
-        wait(2);
-      for(uint8_t i=0;i<100;i = i+2)
-        {
-          MotorParams.engineDrivingParams (i , 0);
-          wait(0.3);
-        }  
-        
-        
+
+              
+    
         
         if( blueToothport.isRxdataReady())   // if the data has been received
         {

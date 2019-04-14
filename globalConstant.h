@@ -11,5 +11,5 @@
 #define WARMUP_TIME      1     
 #define AT_WAIT_TIME   19      // in 1 sec AT will responds
 
-
-
+#define ERROR 9595
+#define SUCCESS 7575
