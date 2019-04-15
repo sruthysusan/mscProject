@@ -35,7 +35,7 @@ int main()
    
    
     memcpy(p,"Haoi\r\n",sizeof(p));
-   wait(12);
+   wait(0.5);
       blueToothport.sendUartString(p);
         
 
