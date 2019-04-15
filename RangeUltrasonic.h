@@ -1,6 +1,5 @@
 #include "globalConstant.h"
 // PTB0 and PTB1 for echo and trigger
-
 /*
    Sound speed = 340m/sec ==> 100cms/3msec
 */
@@ -33,7 +32,6 @@ void rise_fallTrigger(bool risePulse,uint16_t waitTime)
 }
 
 public:
-
  
 Rangingclass(uint8_t brustTime);  
 uint16_t  rangeObstacle(uint16_t timeOut =10000);

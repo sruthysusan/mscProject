@@ -2,21 +2,28 @@
 //#include "btCommands.h"
 
 
- uartModem ::uartModem (BAUD baudRate) 
+uartModem ::uartModem (BAUD baudRate) : powerControl(POWER_BUTTON),enableControl(ENABLE_BUTTON)
    { 
+     
     serialPort = new  Serial(USBTX, USBRX);    
     serialPort->baud(baudRate);
     serialPort->format(8,SerialBase::None,1);  
+    
     statusFLAG =0;
     memset(myBtDetails,'\0',sizeof(*myBtDetails) * BT_REGISTER_SIZE); // clearing all the detsails 
+    BT_power_ON(OFF);     // turn off BT module
     loadBtQuerry(myBtQuerry);
   }
+
+
 
 uartModem ::~uartModem ()
   {    
     delete serialPort;
   }
  
+
+
 void uartModem :: sendUartString(char* strData)
  {
    unsigned i;  
@@ -24,16 +31,20 @@ void uartModem :: sendUartString(char* strData)
      this->serialPort->putc(strData[i]);   
  }
 
+
+
 bool uartModem :: stackRxbuffer()
 {
   static uint8_t count;
   
-//   if( serialPort->getc() == '\n')
-//      return false;
-   
+  if(count ==0)
+   memset(rx_MsgBuffer,'\0',RX_LEN);
+  
   rx_MsgBuffer[count] = serialPort->getc();
-  if(rx_MsgBuffer[count] == '\r')
+  if( rx_MsgBuffer[count] == RX_TERMINATOR && (!(--stat)) )
   {    
+   // if(--stat)
+   //   continue;
     count=0;  // reset count for new count
     enableRxStatusFlag(true);
     return true;
@@ -42,6 +53,8 @@ bool uartModem :: stackRxbuffer()
   if(count > RX_LEN)  count=0;  // reset count to normal
   return false;
 }
+
+
 
 bool uartModem :: isRxdataReady()
 {
@@ -53,6 +66,8 @@ bool uartModem :: isRxdataReady()
   }
     return false;
 }
+
+
 
 void uartModem :: enableRxStatusFlag (bool enable)
 {
@@ -67,6 +82,9 @@ void uartModem :: enableRxStatusFlag (bool enable)
 void uartModem :: stackBTregisterDetails ()
 {
   char p[25]={0};
+  
+  atCommandMode(true); // activate enable pin of HC04 for AT mode
+  BT_powerreset_Pushbtn(true);
   if (btResponseOK())  // to see "AT" and "OK" command 
   {
    for(int i=0;i< (int)ENUM_END;i++)
@@ -75,7 +93,10 @@ void uartModem :: stackBTregisterDetails ()
      myBtQuerry[i].copy(p,myBtQuerry[i].length());
      btTwoResponseFunc(p, BTpos (i) );
    }
-  } 
+  }
+  
+  atCommandMode(false); // deactivate enable pin of HC04 for AT mode
+  BT_powerreset_Pushbtn(true);  // to simulate push btn press for BT power
 }
 
 

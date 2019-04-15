@@ -11,22 +11,25 @@ void rxCallback()
 } 
 
   uint16_t dist, position;
-int main() {    
+int main() 
+{    
 
-    
     blueToothport.serialPort->attach(&rxCallback, Serial::RxIrq);  
     wait(WARMUP_TIME);  // warm up time
     blueToothport.stackBTregisterDetails ();
     motorSetting MotorParams(NEUTRAL);
     Rangingclass rangerObjt(10);
-    bool Dir;
+
  //   MotorParams.engineDrivingParams (70 , 1);   //speed and direction ctrl
    
     while (1) {
     
-    
-      dist = rangerObjt.rangeObstacle();
-      position =  2;
+  
+   dist = blueToothport.btResponseOK();
+      
+      
+//      dist = rangerObjt.rangeObstacle();
+//      position =  2;
       
         wait(2);
 
