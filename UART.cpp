@@ -2,7 +2,8 @@
 //#include "btCommands.h"
 
 
-uartModem ::uartModem (BAUD baudRate) : powerControl(POWER_BUTTON),enableControl(ENABLE_BUTTON)
+uartModem ::uartModem (BAUD baudRate) : powerControl(POWER_BUTTON),
+                                        enableControl(ENABLE_BUTTON)
    { 
      
     serialPort = new  Serial(USBTX, USBRX);    
@@ -28,29 +29,35 @@ void uartModem :: sendUartString(char* strData)
  {
    unsigned i;  
    for( i=0; strData[i]!='\0'; i++ )     
-     this->serialPort->putc(strData[i]);   
+     this->serialPort->putc(strData[i]);  
+   //  this->serialPort->getc(); 
  }
 
 
 
 bool uartModem :: stackRxbuffer()
 {
-  static uint8_t count;
+ // static uint8_t count;
   
   if(count ==0)
+  {
+   rxExitTimer.start();
    memset(rx_MsgBuffer,'\0',RX_LEN);
-  
+  }
   rx_MsgBuffer[count] = serialPort->getc();
   if( rx_MsgBuffer[count] == RX_TERMINATOR && (!(--stat)) )
   {    
-   // if(--stat)
-   //   continue;
+    rxExitTimer.stop();  rxExitTimer.reset();
+    stat =1;
     count=0;  // reset count for new count
     enableRxStatusFlag(true);
     return true;
   }
   count++;
-  if(count > RX_LEN)  count=0;  // reset count to normal
+  if(count > RX_LEN || rxExitTimer.read() ==1)
+  {
+      count=0;  // reset count to normal
+  }
   return false;
 }
 
@@ -107,5 +114,7 @@ void uartModem :: loadBtQuerry(string* BtQuerry)
   BtQuerry[ADDR]    = "AT+ADDR?\r\n";
   BtQuerry[PSWD]    = "AT+PSWD?\r\n";
   BtQuerry[VERSION] = "AT+VERSION?\r\n";
+  BtQuerry[CMODE] = "AT+CMODE=0\r\n";
+  BtQuerry[LINK] = "AT+BIND=18,91,d6be4d\r\n";
 }
 

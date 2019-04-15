@@ -132,14 +132,16 @@ void uartModem :: BT_powerreset_Pushbtn(bool enable)
 {
   if(enable)
   {
-     powerControl = OFF;  // turn off BT for 100 msec 
+     BT_power_ON(OFF);  // turn off BT for 100 msec 
      wait_ms(700);
   }
-  powerControl = ON;     //  and on
+  BT_power_ON(ON);     //  and on
   wait_ms(700);
 }
 
+
 void uartModem ::atCommandMode (bool enable)
 {
+  count=0;
   enableControl = enable;
 }

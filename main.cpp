@@ -21,17 +21,23 @@ int main()
     Rangingclass rangerObjt(10);
 
  //   MotorParams.engineDrivingParams (70 , 1);   //speed and direction ctrl
-   
+   blueToothport.atCommandMode(false);
+   blueToothport.BT_powerreset_Pushbtn(true);
+  char p[8];
     while (1) {
     
-  
-   dist = blueToothport.btResponseOK();
+ //  blueToothport.stat =1;
+ //  dist = blueToothport.btResponseOK();
       
       
 //      dist = rangerObjt.rangeObstacle();
 //      position =  2;
-      
-        wait(2);
+   
+   
+    memcpy(p,"Haoi\r\n",sizeof(p));
+   wait(12);
+      blueToothport.sendUartString(p);
+        
 
               
     

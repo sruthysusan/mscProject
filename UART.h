@@ -4,7 +4,7 @@
 #define POWER_BUTTON PTA12 
 #define ENABLE_BUTTON PTD4 
 
-enum BTpos{NAME=0,ADDR,PSWD,VERSION,ENUM_END};
+enum BTpos{NAME=0,ADDR,PSWD,VERSION,CMODE,LINK,ENUM_END};
 
 class uartModem {
   
@@ -30,7 +30,7 @@ void enableRxStatusFlag (bool enable);
 void stackBTregisterDetails ();
 bool btresponseWait();
 uint8_t btResponseOK();
-  
+  uint8_t stat,count;
   
 /*___________________Private Sector of class starts here_________________________________*/
 
@@ -38,7 +38,7 @@ uint8_t btResponseOK();
 private:
 
 uint8_t statusFLAG;
-uint8_t stat;
+Timer rxExitTimer;
 DigitalOut powerControl, enableControl;
 
 
@@ -52,9 +52,12 @@ uint8_t btresponsePassword();
 uint8_t  btTwoResponseFunc(char* commandPayload, BTpos position );
 
 
+
+void BT_power_ON (bool on);
+
+public:
 void BT_powerreset_Pushbtn(bool enable=false);
 void atCommandMode(bool enable);
-void BT_power_ON (bool on);
 
 };
 
