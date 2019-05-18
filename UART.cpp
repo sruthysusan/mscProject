@@ -14,6 +14,7 @@ uartModem ::uartModem (BAUD baudRate) : powerControl(POWER_BUTTON),
     memset(myBtDetails,'\0',sizeof(*myBtDetails) * BT_REGISTER_SIZE); // clearing all the detsails 
     BT_power_ON(OFF);     // turn off BT module
     loadBtQuerry(myBtQuerry);
+    at_CommandMode = false;
   }
 
 
@@ -86,7 +87,7 @@ void uartModem :: enableRxStatusFlag (bool enable)
 
 
 
-void uartModem :: stackBTregisterDetails ()
+void uartModem :: stackBTregisterDetails (int reqData,int reqLimit)
 {
   char p[25]={0};
   
@@ -94,7 +95,7 @@ void uartModem :: stackBTregisterDetails ()
   BT_powerreset_Pushbtn(true);
   if (btResponseOK())  // to see "AT" and "OK" command 
   {
-   for(int i=0;i< (int)ENUM_END;i++)
+   for(int i=reqData;i< reqLimit;i++)
    {     
 // https://stackoverflow.com/questions/2889421/how-to-copy-a-string-into-a-char-array-in-c-without-going-over-the-buffer/2889483
      myBtQuerry[i].copy(p,myBtQuerry[i].length());
@@ -108,6 +109,7 @@ void uartModem :: stackBTregisterDetails ()
 
 
 
+
 void uartModem :: loadBtQuerry(string* BtQuerry)
 {
   BtQuerry[NAME]    = "AT+NAME?\r\n";
@@ -116,5 +118,11 @@ void uartModem :: loadBtQuerry(string* BtQuerry)
   BtQuerry[VERSION] = "AT+VERSION?\r\n";
   BtQuerry[CMODE] = "AT+CMODE=0\r\n";
   BtQuerry[LINK] = "AT+BIND=18,91,d6be4d\r\n";
+  
+  BtQuerry[INIT] = "AT+INIT\r\n";
+  BtQuerry[IAC] = "AT+IAC=9e8b33\r\n";
+  BtQuerry[CLASS] = "AT+CLASS=0\r\nAT\r\n";
+  BtQuerry[RSSI_VAL] = "AT+INQM=1,1,48\r\n";
+  BtQuerry[RSSI_REQ] = "AT+INQ\r\n";
 }
 

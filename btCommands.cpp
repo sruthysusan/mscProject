@@ -2,37 +2,6 @@
 //#include "btCommands.h"
 #include <string>
 
-/*
-
-              // Sample to verify
-
-uint8_t uartModem :: btresponseVersion()
-{     
-  char* commandPayload ="AT+VERSION?\r\n";
-  sendUartString(commandPayload);
-  
-  if(btresponseWait() == false)
-   return false;                                                                // wait for the first set of incomes with /r
-  
-  myBtDetails[VERSION]=((char*)rx_MsgBuffer);  
-  
-          //http://www.cplusplus.com/reference/string/string/compare/
-  
-  if(!myBtDetails[VERSION].compare(1,strlen("+VERSION:"),"+VERSION:"))          // check first 8 characters
-    {     
-        //http://www.cplusplus.com/reference/string/string/substr/      
-      myBtDetails[VERSION] = myBtDetails[VERSION].substr(strlen("+VERSION:"),
-                             myBtDetails[VERSION].length() );                   // store the version number in without "+VERSION:"
-    }
-  if(btresponseWait() == false)
-   return false;                                                                // wait for the first set of incomes with /r "OK"    
-  
-  if(strcmp((char*)rx_MsgBuffer,"OK\r"))
-   return false;
- else
-   return true;
-}
-*/
 
 uint8_t uartModem :: btResponseOK()
 {  
@@ -77,7 +46,7 @@ uint8_t uartModem :: btTwoResponseFunc(char* commandPayload, BTpos position )
   {
   
     // return false;                       // wait for the first set of incomes with /r
-} 
+  } 
     myBtDetails[position]=((char*)rx_MsgBuffer);  
    
   int startPoint = myBtDetails[position].find(':');  // check for the ':' character
@@ -144,4 +113,5 @@ void uartModem ::atCommandMode (bool enable)
 {
   count=0;
   enableControl = enable;
+  at_CommandMode = enable;
 }

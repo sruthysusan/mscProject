@@ -1,13 +1,18 @@
 #include "UART.h"
 #include "motorSpeed.h"
 #include "RangeUltrasonic.h"
+#include "CommunicationPrtcol.h"
  
 uartModem blueToothport(38400);
+Communication_lib normalCommunication;
 
 // This function is called when a character goes into the RX buffer.
 void rxCallback() 
-{     
-   blueToothport.stackRxbuffer(); 
+{    
+  if(blueToothport.isCommandmode())
+     blueToothport.stackRxbuffer(); 
+  else
+    normalCommunication.ReceivedData();
 } 
 
   uint16_t dist, position;
@@ -20,6 +25,8 @@ int main()
     motorSetting MotorParams(NEUTRAL);
     Rangingclass rangerObjt(10);
 
+     blueToothport.stackBTregisterDetails (INIT,ENUM_END_2);
+    
  //   MotorParams.engineDrivingParams (70 , 1);   //speed and direction ctrl
    blueToothport.atCommandMode(false);
    blueToothport.BT_powerreset_Pushbtn(true);

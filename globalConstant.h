@@ -19,6 +19,8 @@
 #define OUT_OF_RANGE 165
 #define RECORDS   7
 #define previous(n) (RECORDS+n)
+//#define COMMAND_MODE   10
+#define DATA_MODE   12
 
 
 
