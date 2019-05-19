@@ -26,12 +26,19 @@ uartModem ::~uartModem ()
  
 
 
-void uartModem :: sendUartString(char* strData)
+void uartModem :: sendUartData( char* strData)
  {
    unsigned i;  
-   for( i=0; strData[i]!='\0'; i++ )     
-     this->serialPort->putc(strData[i]);  
-   //  this->serialPort->getc(); 
+   if(isCommandmode())
+   {
+        for( i=0; strData[i]!='\0'; i++ )     
+          this->serialPort->putc(strData[i]);  
+   }
+   else
+   {
+        for( i=0; i < RXDATASIZE ; i++ )     
+          this->serialPort->putc(strData[i]);  
+   }
  }
 
 
@@ -116,7 +123,7 @@ void uartModem :: loadBtQuerry(string* BtQuerry)
   BtQuerry[ADDR]    = "AT+ADDR?\r\n";
   BtQuerry[PSWD]    = "AT+PSWD?\r\n";
   BtQuerry[VERSION] = "AT+VERSION?\r\n";
-  BtQuerry[CMODE] = "AT+CMODE=0\r\n";
+  BtQuerry[CMODE] = "AT+CMODE=1\r\n";
   BtQuerry[LINK] = "AT+BIND=18,91,d6be4d\r\n";
   
   BtQuerry[INIT] = "AT+INIT\r\n";

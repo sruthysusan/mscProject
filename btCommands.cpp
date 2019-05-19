@@ -1,5 +1,4 @@
 #include "UART.h"
-//#include "btCommands.h"
 #include <string>
 
 
@@ -12,7 +11,7 @@ uint8_t uartModem :: btResponseOK()
   
   char* commandPayload ="AT\r\n";
   stat =1;
-  sendUartString(commandPayload);
+  sendUartData(commandPayload);
   
  if(btresponseWait() == false);
   // return false;
@@ -32,7 +31,7 @@ uint8_t uartModem :: btResponseOK()
 
 
 
-uint8_t uartModem :: btTwoResponseFunc(char* commandPayload, BTpos position )
+uint8_t uartModem :: btTwoResponseFunc( char* commandPayload, BTpos position )
 {
    bool Success = false;
   
@@ -40,14 +39,14 @@ uint8_t uartModem :: btTwoResponseFunc(char* commandPayload, BTpos position )
   BT_powerreset_Pushbtn(true);        // press push btn to power cycle BT module
  
     stat =2;
-   sendUartString(commandPayload);
+   sendUartData(commandPayload);
   
   if(btresponseWait() == false)
-  {
-  
+  {  
     // return false;                       // wait for the first set of incomes with /r
   } 
-    myBtDetails[position]=((char*)rx_MsgBuffer);  
+   
+  myBtDetails[position]=((char*)rx_MsgBuffer);  
    
   int startPoint = myBtDetails[position].find(':');  // check for the ':' character
   if(startPoint ==  string::npos){}// refers noo ':' found
@@ -102,10 +101,10 @@ void uartModem :: BT_powerreset_Pushbtn(bool enable)
   if(enable)
   {
      BT_power_ON(OFF);  // turn off BT for 100 msec 
-     wait_ms(700);
+     wait_ms(1300);
   }
   BT_power_ON(ON);     //  and on
-  wait_ms(700);
+  wait_ms(1300);
 }
 
 

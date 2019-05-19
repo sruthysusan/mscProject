@@ -15,7 +15,7 @@ int correction;
 uint8_t triggerTime;
 bool pStateEcho;
 
-uint8_t rangeRecord[RECORDS];   // to save the range values
+uint8_t rangeRecord[RECORDS];   // to save the range values 0 ->newest, 6 -> oldest
 /*
 // default timeout = 10,000 usec, time taking more than 9msec implies 
    obstacle @ more than 3 m away
@@ -34,7 +34,7 @@ void rise_fallTrigger(bool risePulse,uint16_t waitTime)
 public:
  
 Rangingclass(uint8_t brustTime);  
-uint16_t  rangeObstacle(uint16_t timeOut =10000);
-uint8_t UpdateRangeArray(uint8_t  position){ return rangeRecord[position];  }  
+uint16_t  rangeObstacle(uint16_t timeOut =10000);  //timeout in usec
+uint8_t enquireRangeRecord_Pos(uint8_t  position){ return rangeRecord[position];  }  
   
 };

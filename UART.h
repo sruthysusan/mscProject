@@ -1,12 +1,15 @@
  
 #include "globalConstant.h"
 
+#ifndef UART_H
+#define UART_H
+
 #define POWER_BUTTON PTA12 
 #define ENABLE_BUTTON PTD4 
 
 enum BTpos{NAME=0,ADDR,PSWD,VERSION,CMODE,LINK,ENUM_END,
            INIT,IAC,CLASS,RSSI_VAL,RSSI_REQ,ENUM_END_2};
-//#define RSSI_REQ (ENUM_END+1)
+
 
 class uartModem {
   
@@ -24,7 +27,7 @@ string myBtQuerry [BT_REGISTER_SIZE];
 uartModem (BAUD baudRate);
 ~uartModem();
 
-void sendUartString(char* strData);  // data pointing by reference method
+void sendUartData( char* strData);  // data pointing by reference method
 bool stackRxbuffer();
 
 bool isRxdataReady();
@@ -53,7 +56,7 @@ void loadBtQuerry(string* BtQuerry);
 
 uint8_t btresponseVersion();
 uint8_t btresponsePassword();
-uint8_t  btTwoResponseFunc(char* commandPayload, BTpos position );
+uint8_t  btTwoResponseFunc( char* commandPayload, BTpos position );
 
 
 
@@ -65,3 +68,4 @@ void atCommandMode(bool enable);
 
 };
 
+#endif
