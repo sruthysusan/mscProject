@@ -10,14 +10,18 @@ Rangingclass::Rangingclass (uint8_t brustTime):triggerTime (brustTime),
   while (hc04_Echo==2);  // wait for read time
   t_timer.stop(); 
   correction = t_timer.read_us();
+  LoadingNewData = false;
 }
 
 
 
  uint16_t Rangingclass :: rangeObstacle(uint16_t timeOut)
  {
+   
   uint16_t Pulsar=0;
   uint8_t reTries = 4; // try 4 times incase of ERROR
+ // if(LoadingNewData == true) return rangeRecord[LATEST];
+  //LoadingNewData = true;
   do
   {
   pStateEcho = hc04_Echo;
@@ -36,6 +40,7 @@ Rangingclass::Rangingclass (uint8_t brustTime):triggerTime (brustTime),
      calculate_save_Dist(Pulsar);
      distance = rangeRecord[0];
    }  
+  LoadingNewData = false;
   return distance;    // in centimeters
  }
  

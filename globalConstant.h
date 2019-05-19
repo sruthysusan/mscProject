@@ -16,7 +16,7 @@
 #define RX_LEN 30
 #define TX_LEN 20
 #define BT_REGISTER_SIZE 20
-#define WARMUP_TIME      1     
+#define WARMUP_TIME      10     
 #define AT_WAIT_TIME   19      // in 1 sec AT will responds
 #define ON     true   
 #define OFF    false    
@@ -30,7 +30,10 @@
 #define DATA_MODE   12
 
 enum{NO_DIRECTION, LEFT_TURN, RIGHT_TURN, AUTO, MANUAL, RSSI_READ};
-enum{SET_SPEED=1,SET_OBSTACLE,L_R_STRAIGHT,AUTO_MAN_RSSI};
+enum{SET_SPEED=1,SET_OBSTACLE,AUTO_MAN_RSSI,L_R_STRAIGHT};
+
+#define LATEST 0
+
 
 /*
 engineDrivingParams (70 , 1);   //speed and direction ctrl

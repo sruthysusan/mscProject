@@ -13,11 +13,12 @@ class Communication_lib{
 public:
   
   unsigned char SendData[RXDATASIZE];
-  unsigned char RecvdData[RXDATASIZE];
+  unsigned char RecvdDatatemp[20];
+  unsigned char RecvdData[6];
   unsigned char roverParameters[4];
 
   Communication_lib ();
-  void ReceivedData(uartModem & DataPort);
+  void ReceivedDataFunc(uartModem & DataPort);
   void  broadcastOutData(uartModem & DataPort);
   bool isRcvdDataRdy(){return packetRdy;}
 
@@ -26,6 +27,7 @@ private:
 
   bool packetRdy;
  char DataOut[6];
+ int8_t count;
 
 Ticker TmrIntr; 
 

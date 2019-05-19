@@ -14,6 +14,7 @@ Timer t_timer;      // just a timer module
 int correction;
 uint8_t triggerTime;
 bool pStateEcho;
+bool LoadingNewData;
 
 uint8_t rangeRecord[RECORDS];   // to save the range values 0 ->newest, 6 -> oldest
 /*

@@ -22,22 +22,24 @@ void Communication_lib :: broadcastOutData(uartModem & DataPort)
 }
 
 
-void Communication_lib :: ReceivedData(uartModem & DataPort) 
+void Communication_lib :: ReceivedDataFunc(uartModem & DataPort) 
 {
-  static uint8_t count;
-  
+    
   packetRdy=false;
-  if(count >= RXDATASIZE)
+  if(count >18) count=0;
+  
+   RecvdDatatemp[count++] = DataPort.serialPort->getc();
+  
+  if( RecvdDatatemp[count-1] == PACKET_STOP)
   {
-    count = RESET;
-   if( SendData[0] == PACKET_START && SendData[RXDATASIZE-1] == PACKET_STOP)
+  
+   memmove(RecvdData, RecvdDatatemp + (count-RXDATASIZE) * sizeof(unsigned char), RXDATASIZE * sizeof(unsigned char));
+     count=0;
+   if( RecvdDatatemp[0] == PACKET_START )
    {
      packetRdy=true;
    }
   }
-  else
-  {
-    SendData[count++] = DataPort.serialPort->getc();
   
-  }
+  
 }
